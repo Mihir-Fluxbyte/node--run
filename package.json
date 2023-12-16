@@ -1,0 +1,18 @@
+{
+  "name": "ex-cm",
+  "version": "1.0.0",
+  "description": "Run commands from json config file \"ex-cm.config.json\"",
+  "main": "ex-cm.js",
+  "scripts": {
+    "start": "node ex-cm.js"
+  },
+  "bin": {
+    "ex-cm": "ex-cm.js"
+  },
+  "keywords": [
+    "run",
+    "commands"
+  ],
+  "author": "Mihir",
+  "license": "ISC"
+}
