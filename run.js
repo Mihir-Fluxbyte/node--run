@@ -12,13 +12,13 @@ const loadingInterval = setInterval(() => {
 }, 100);
 
 // Load the configuration file
-const configFile = "ex-cm.config.json"; // Change this if needed
+const configFile = "run.config.json"; // Change this if needed
 let config = {};
 try {
   config = JSON.parse(fs.readFileSync(configFile, "utf8"));
 } catch {
   console.error(
-    `\x1b[38;5;166mPlease provide valid json config in file "ex-cm.config.js"\x1b[0m`
+    `\x1b[38;5;166mPlease provide valid json config in file "run.config.js"\x1b[0m`
   );
   process.exit();
 }
@@ -101,7 +101,7 @@ async function main() {
         })`
       );
     }
-    console.log("\nUsage: node ex-cm <command> [--parallel] [--help]");
+    console.log("\nUsage: node run <command> [--parallel] [--help]");
     console.log("\nAvailable Commands:");
     Object.keys(config).forEach((cmd) => {
       console.log(`  \x1b[1m${cmd}\x1b[0m`);

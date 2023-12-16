@@ -1,13 +1,14 @@
 {
-  "name": "ex-cm",
+  "name": "@node-/run",
   "version": "1.0.0",
-  "description": "Run commands from json config file \"ex-cm.config.json\"",
-  "main": "ex-cm.js",
+  "description": "Run commands from json config file \"run.config.json\"",
+  "main": "run.js",
+  "private": false,
   "scripts": {
-    "start": "node ex-cm.js"
+    "start": "node run.js"
   },
   "bin": {
-    "ex-cm": "ex-cm.js"
+    "run": "run.js"
   },
   "keywords": [
     "run",
