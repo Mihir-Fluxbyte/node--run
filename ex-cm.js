@@ -85,7 +85,7 @@ async function runCommands() {
       }
     }
   } else {
-    console.error("Command not found in the configuration file.");
+    console.error("\r\x1b[38;5;166mCommand not found in the configuration file.\x1b[0m");
   }
 }
 
